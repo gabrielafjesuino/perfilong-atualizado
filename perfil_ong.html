@@ -88,7 +88,7 @@
                 <button class="ver-mais">Ver mais</button>
                 <div class="conteudo-extra">
                     <ul style="padding-left: 0px;">
-                        <li id="descricao_da_causa" style="display: block;" class="g"></li>
+                        <li id="descricao_da_causa" style="display: block;text-align: justify;" class="g"></li>
                     </ul>
                 </div>
             </section>
@@ -147,20 +147,14 @@
                 </button>
             </a>
 
-            <a onclick="window.location.href = 'http://192.168.1.118:5000/doacao/ong/relatorio/' + localStorage.getItem('id_usuario')" >
-                <button class="button2" style="border-radius: 10px;">
-                    <div class="containerdois">
-                    <div class="folder folder_one"></div>
-                    <div class="folder folder_two"></div>
-                    <div class="folder folder_three"></div>
-                    <div class="folder folder_four"></div>
-                    </div>
-                    <div class="active_line"></div>
-                    <span class="text">Baixar relatório de doações</span>
+            <div>
+                <button style="background-color:#F37500; display: flex; align-items: center; justify-content: center; padding: 10px; border-radius: 10px; height: 79px;" onclick="window.location.href = 'http://192.168.1.118:5000/doacao/ong/relatorio/' + localStorage.getItem('id_usuario')">
+                    <img src="assets/img/baixar.png" style="width: 50px; height: 50px;">
+                    <span class="display_flex centralizado" style="margin: 0; display: flex; align-items: center; justify-content: center; height: 100%; color: #082C5B; padding-right: 15px;">BAIXAR RELATÓRIO</span>
                 </button>
-            </a>
-            
-                <button style="background-color:#F37500; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; border-radius: 10px; height: 79px;" id="btn">
+            </div>
+
+                <button style="background-color:#F37500; display: flex; align-items: center; justify-content: center; padding: 10px; border-radius: 10px; height: 79px;" id="btn">
                     <img src="assets/img/excluir2.png" style="width: 50px; height: 50px;">
                     <p class="display_flex centralizado" style="margin: 0; display: flex; align-items: center; justify-content: center; height: 100%; color: #082C5B; padding-right: 15px;">EXCLUIR</p>
                 </button>

@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -16,102 +15,135 @@
 /* Início - Cabeçalho */
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: var(--branco);
     box-shadow: #2f303d25 2px 6px 5px;
     padding-bottom: 10px;
     gap: 50px;
-    z-index: 1000; 
 }
 
 .logo1 {
-    width: 150px;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    margin-right: 880px;
+    padding-top: 10px;
+    width: 205px;
+    margin-left: -60px;
+    padding-left: 50px;
+    margin-right: 800px;
 }
 
-.Btn {
-    display: flex;
+
+.text-nav {
+    gap: 20px;
+    text-decoration: none;
     align-items: center;
-    justify-content: flex-start;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition-duration: .3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: #000;
+    font-size: 15px;
+}
+
+.text-nav:hover {
+    color: var(--laranja);
+}
+
+.doe-agora {
+    font-size: 15px;
+    gap: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    align-items: center;
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: var(--branco);
     background-color: var(--laranja);
+    border-radius: 25px;
+    border-color: var(--laranja);
+    border: none;
+    padding: 10px;
 }
 
-.sign {
+.doe-agora:hover {
+    color: var(--laranja);
+    background-color: var(--branco);
+    border-color: var(--laranja);
+    border: 2px solid var(--laranja);
+}
+
+.text-nav3 {
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: #000;
+    font-size: 15px;
+    border: 2px solid transparent; 
+}
+
+.text-nav3:hover {
+    color: var(--laranja) !important;
+    background-color: var(--branco) !important;
+    border-color: var(--laranja) !important;
+}
+
+.btn-lar {
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 580px;
+}
+
+.input-header {
+    font-family: 'Microsoft JhengHei UI', sans-serif;
     width: 100%;
-    transition-duration: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 30px;
+    padding-left: 2.5rem;
+    box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+    border: 0;
+    border-radius: 23px;
+    background-color: var(--branco);
+    outline: none;
+    color: var(--cinza);
+    cursor: text;
+    z-index: 0;
 }
 
-.sign svg {
-    width: 17px;
+.input-header::placeholder {
+    color: var(--cinza);
 }
 
-.sign svg path {
-    fill: white;
+.input-header:hover {
+    box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
 }
 
-/* Text */
-.text2 {
-    font-family: Poppins;
-    font-weight: lighter;
+.input-header:active {
+    transform: scale(0.95);
+}
+
+.input-header:focus {
+    box-shadow: 0 0 0 2.5px #2f303d;
+    width: 800px !important;
+    border: none;
+}
+
+.tamt {
+    font-size: 40px;
+}
+
+.search-icon {
     position: absolute;
-    right: 0%;
-    width: 0%;
-    opacity: 0;
-    color: white;
-    font-size: 1.08em;
-    font-weight: 500;
-    transition-duration: .3s;
+    left: 1rem;
+    fill: #89898c;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 1;
 }
 
-.Btn:hover {
-    width: 125px;
-    border-radius: 40px;
-    transition-duration: .3s;
-}
-
-.Btn:hover .sign {
-    transform: translateX(-35px);
-    transition-duration: .3s;
-}
-
-/* Hover effect button's text */
-.Btn:hover .text2 {
-    opacity: 1;
-    width: 70%;
-    transition-duration: .3s;
-    padding-right: 10px;
-}
-
-/* Button click effect */
-.Btn:active {
-    transform: translate(2px, 2px);
-}
-
-/* Início - MAIN */
-.nav-container {
-    display: flex;
-    align-items: center;
-    gap: 55px;
-}
-
+/* Fim - Cabeçalho */
 .banner {
     width: 100%;
     margin: 0;
@@ -300,6 +332,7 @@ header {
     flex-direction: row;
     align-content: center;
     align-items: flex-start;
+    margin-top: 50px;
 }
   
 .blocos-container > section {
@@ -505,11 +538,13 @@ button {
   .button:hover .text {
     opacity: 1;
   }
+
 /* Início - Rodapé */
 
 footer {
     background-color: var(--branco);
     padding-top: 60px;
+    margin-top: 50px;
 }
 
 .logo2 {
@@ -562,40 +597,22 @@ footer {
 .margin {
     margin-bottom: 18px !important;
 }
-.sair {
-    border: 2px solid var(--laranja); /* Define uma borda de 2px, sólida e azul */
-    background-color: transparent; /* Remove a cor de fundo */
-    color: blue; /* Define a cor do texto como azul, para combinar com a borda */
-    padding: 0px 20px; /* Adiciona um espaço interno ao texto */
-    text-decoration: none; /* Remove a sublinhado padrão do link */
-    border-radius: 10px;
-  }
-  
-  /* Adicionando um efeito hover */
-  .sair:hover {
-    background-color: var(--laranja);/* Muda a cor de fundo quando o botão é clicado */
-    color: white; /* Muda a cor do texto para branco */
-    cursor: pointer;
-  }
+
 /* Fim - Rodapé */
 
 /* RESPONSIVO */
 
 @media (max-width: 426px) {
     header {
-        position: relative;
-        top: 0;
-        left: 0;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding-bottom: 30px;
         gap: 20px;
-        z-index: 0; 
     }
 
     .ajuste {
-        margin-left: -42px !important;
+        margin-left: -39px !important;
     }
 
     .logo1 {
@@ -673,17 +690,13 @@ footer {
         text-align: left;
         font-size: 15px;
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     footer {
         padding-top: 58px;
+        margin-top: 40px;
         text-align: center;
-    }
-
-    .blocos-container2 {
-        display: block;
-        margin-top: 10px;
     }
 
     .tamanho {
@@ -725,7 +738,7 @@ footer {
     }
 
     .m {
-        padding-left: 165px;
+        padding-left: 125px;
     }
 
     .botao {
@@ -735,15 +748,15 @@ footer {
 
     .but {
         margin-left: 45px;
-        margin-right: 45px;
+        margin-right: 228px;
+    }
+
+    .ajtam {
+        width: 150px;
     }
 
     .sair {
         margin-left: 45px;
-    }
-
-    .pl {
-        padding-left: 80px;
     }
 
     .respon {
@@ -774,51 +787,18 @@ footer {
         font-size: 37px;
     }
 
-    .botao {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .blocos-container2 {
+        display: block;
+        margin-top: 10px;
     }
-      
-    .sair {
-        margin: 0 !important;
-        padding-top: 0 !important;
-        font-size: 1rem;
-    }
-    
-    .but,
-    .button2 {
-        max-width: 300px;
-        justify-content: center;
-    }
-    
-    .but p,
-    .but img,
-    .button2 .text {
-        font-size: 0.9rem;
-    }
-    
-    .text {
-        top: 3.2em;
-        width: max-content;
-        padding: 10px;
-    }
-    .containerdois{
-        justify-content: center;
-        margin-left: 2px;
-    }
-    .ajtam {
-        width: 150px;
-    }
-      }
-
+}
 
 @media (max-width: 376px) {
     header {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 8px;
+        padding-bottom: 28px;
     }
 
     .logo1 {
@@ -858,6 +838,10 @@ footer {
         left: 25px;
     }
 
+    .tamt {
+        font-size: 36px;
+    }
+
     .bannerr {
         flex-direction: column;
         align-items: center;
@@ -890,6 +874,7 @@ footer {
 
     footer {
         padding-top: 48px;
+        margin-top: 40px;
         text-align: center;
     }
 
@@ -944,7 +929,7 @@ footer {
 
     .but {
         margin-left: 30px;
-        margin-right: 30px;
+        margin-right: 185px;
     }
 
     .sair {
@@ -966,53 +951,41 @@ footer {
     .respon {
         margin-left: 40px;
     }
-    .containerdois{
-        justify-content: center;
-        margin-left: 2px;
+}
+
+@media (max-width: 351px) {
+    body {
+        overflow-X: hidden;
     }
-    .but,
-    .button2 {
-      max-width: 270px;
+
+    .respon {
+        margin-left: 34px;
     }
-  
-    .text {
-      font-size: 0.8rem;
-      width: max-content;
+
+    .gg {
+        font-size: 29px;
     }
 }
 
 @media (max-width: 321px) {
     .pl {
-        padding-left: 75px;
-    }
-
-    .bannerrr {
-        margin-left: 65px;
+        padding-left: 120px;
     }
 
     .gg {
         font-size: 29px;
         margin-left: 47px;
     }
-    .but,
-    .button2 {
-      max-width: 250px;
-    }
-  
-    .text {
-      font-size: 0.75rem;
+
+    .bannerrr {
+        margin-left: 0px;
     }
 
-    .caixa {
-        width: 95%;
+    .ajuste {
+        margin-left: 28px !important;
     }
-    .m {
-        padding-left: 0px;
-    }
-    .lala {
-        padding-right: 100px;
-    }
-    .ajuste{
-        margin-left: -39px !important;
+
+    .but {
+        margin-right: 130px;
     }
 }
